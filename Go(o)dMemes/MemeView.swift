@@ -8,13 +8,72 @@
 import SwiftUI
 
 struct MemeView: View {
+    
+    var meme: Meme
+    
+    @State var memeC = MemeCL()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        AsyncImage(url: URL(string: meme.url)) { phase in
+            switch phase {
+            case .empty:
+                HStack {
+                    Spacer()
+                    ProgressView()
+                    Spacer()
+                }
+                .padding()
+            case .success(let image):
+                image
+                    .resizable()
+                    .scaledToFit()
+            case .failure:
+                HStack {
+                    Spacer()
+                    Image(systemName: "bookmark")
+                        .font(.system(size: 58))
+                    Spacer()
+                }
+            @unknown default:
+                fatalError()
+            }
+        }
+        HStack {
+            Button {
+//                memeC.liked.toggle()
+            } label: {
+                HStack {
+                    Spacer()
+                    Image(systemName: "heart")
+//                        .symbolVariant(memeC.liked ? .fill : .none)
+                    Spacer()
+                }
+                .padding(8)
+                .background(.thinMaterial)
+                .cornerRadius(20)
+            }
+            Button {
+//                memeC.bookmarked.toggle()
+            } label: {
+                HStack {
+                    Spacer()
+                    Image(systemName: "bookmark")
+//                        .symbolVariant(memeC.bookmarked ? .fill : .none)
+                    Spacer()
+                }
+                .padding(8)
+                .background(.thinMaterial)
+                .cornerRadius(20)
+            }
+        }
+        .onAppear {
+            memeC.meme = meme
+        }
     }
 }
 
 struct MemeView_Previews: PreviewProvider {
     static var previews: some View {
-        MemeView()
+        MemeView(meme: Meme(postLink: "https://redd.it/pok4sa", subreddit: "memes", title: "This is holup material", url: "https://i.redd.it/b2in1a1ivln71.jpg", nsfw: false, spoiler: false, author: "thebunnyoffluff", ups: 4165, preview: ["one", "two"]))
     }
 }
