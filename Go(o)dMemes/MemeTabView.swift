@@ -9,10 +9,11 @@ import SwiftUI
 
 struct MemeTabView: View {
     
+    var showsMenuTab : Bool
     @StateObject public var articleNewsVM = MemeViewModel()
     
     var body: some View {
-            MemeView(meme: articles)
+        MemeView(meme: articles, showsMenu: showsMenuTab)
                 .overlay(overlayView)
                 .onAppear {
                     Task.init(operation: {

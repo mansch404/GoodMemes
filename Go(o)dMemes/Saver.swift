@@ -24,7 +24,7 @@ class Saver {
     }
     
     static func getMemes() -> [Meme] {
-        userDefaults.object(forKey: mainKey)
+        userDefaults.object(forKey: mainKey) as! [Meme]
     }
     
 }

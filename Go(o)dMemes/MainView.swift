@@ -11,7 +11,7 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack {
-                MemeTabView()
+                MemeTabView(showsMenuTab: true)
             }
             .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.75 , alignment: .top)
             //                .background(Color(uiColor: UIColor.systemGray6))

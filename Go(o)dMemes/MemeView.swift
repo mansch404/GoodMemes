@@ -10,6 +10,7 @@ import SwiftUI
 struct MemeView: View {
     
     var meme: Meme
+    var showsMenu: Bool
     
     @State var memeC = MemeCL()
     
@@ -38,6 +39,7 @@ struct MemeView: View {
                 fatalError()
             }
         }
+        if showsMenu {
         HStack {
             Button {
 //                memeC.liked.toggle()
@@ -65,15 +67,16 @@ struct MemeView: View {
                 .background(.thinMaterial)
                 .cornerRadius(20)
             }
-        }
-        .onAppear {
+        }.onAppear {
             memeC.meme = meme
         }
+        }
+        
     }
 }
 
 struct MemeView_Previews: PreviewProvider {
     static var previews: some View {
-        MemeView(meme: Meme(postLink: "https://redd.it/pok4sa", subreddit: "memes", title: "This is holup material", url: "https://i.redd.it/b2in1a1ivln71.jpg", nsfw: false, spoiler: false, author: "thebunnyoffluff", ups: 4165, preview: ["one", "two"]))
+        MemeView(meme: Meme(postLink: "https://redd.it/pok4sa", subreddit: "memes", title: "This is holup material", url: "https://i.redd.it/b2in1a1ivln71.jpg", nsfw: false, spoiler: false, author: "thebunnyoffluff", ups: 4165, preview: ["one", "two"]), showsMenu: true)
     }
 }
