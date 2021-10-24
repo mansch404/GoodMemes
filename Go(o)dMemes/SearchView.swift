@@ -11,7 +11,6 @@ struct SearchView: View {
     @State private var searchText: String = ""
     var body: some View {
         NavigationView {
-            
             VStack {
                 ForEach(0..<5) { _ in
                 HStack {
