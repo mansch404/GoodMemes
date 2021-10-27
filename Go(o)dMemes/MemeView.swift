@@ -27,6 +27,7 @@ struct MemeView: View {
             case .success(let image):
                 image
                     .resizable()
+                    .clipped()
                     .scaledToFit()
             case .failure:
                 HStack {
