@@ -44,11 +44,13 @@ struct MemeView: View {
         HStack {
             Button {
 //                memeC.liked.toggle()
+                Saver.setMeme(memes: meme)
             } label: {
                 HStack {
                     Spacer()
                     Image(systemName: "heart")
 //                        .symbolVariant(memeC.liked ? .fill : .none)
+                    
                     Spacer()
                 }
                 .padding(8)

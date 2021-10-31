@@ -15,7 +15,7 @@ class Saver {
         userDefaults.set(url, forKey: mainKey)
     }
     
-    static func setMeme(memes : [Meme]) {
+    static func setMeme(memes : Meme) {
         userDefaults.set(memes, forKey: mainKey)
     }
     
@@ -23,8 +23,8 @@ class Saver {
         userDefaults.url(forKey: mainKey)!
     }
     
-    static func getMemes() -> [Meme] {
-        userDefaults.object(forKey: mainKey) as! [Meme]
+    static func getMemes() -> Meme {
+        userDefaults.object(forKey: mainKey) as! Meme
     }
     
 }
