@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0CBCA02730877E00934917 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0CBC9F2730877E00934917 /* VideoView.swift */; };
 		0D60515B2721ED380008F4AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60515A2721ED380008F4AA /* MainView.swift */; };
 		0D60515D2721EDAD0008F4AA /* LikedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60515C2721EDAD0008F4AA /* LikedView.swift */; };
 		0D60515F2721EDB70008F4AA /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60515E2721EDB70008F4AA /* SavedView.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0CBC9F2730877E00934917 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		0D60515A2721ED380008F4AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0D60515C2721EDAD0008F4AA /* LikedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedView.swift; sourceTree = "<group>"; };
 		0D60515E2721EDB70008F4AA /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0CBC9E273043CB00934917 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				0D60515A2721ED380008F4AA /* MainView.swift */,
+				0D60515C2721EDAD0008F4AA /* LikedView.swift */,
+				0D60515E2721EDB70008F4AA /* SavedView.swift */,
+				0D6051602721EE510008F4AA /* SearchView.swift */,
+				0D0CBC9F2730877E00934917 /* VideoView.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
 		0D610A4826F271DA00EFBDB8 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +130,7 @@
 		0D610A5326F271DA00EFBDB8 /* Go(o)dMemes */ = {
 			isa = PBXGroup;
 			children = (
+				0D0CBC9E273043CB00934917 /* TabViews */,
 				0D610A5426F271DA00EFBDB8 /* Go_o_dMemesApp.swift */,
 				0D610A5626F271DA00EFBDB8 /* ContentView.swift */,
 				0D610A5826F271DB00EFBDB8 /* Assets.xcassets */,
@@ -126,10 +141,6 @@
 				0D610A8426F278E300EFBDB8 /* MemeTabView.swift */,
 				0D610A8626F2792D00EFBDB8 /* MemeViewModel.swift */,
 				0DAC82AA26F28A1C00FFEF01 /* MemeCL.swift */,
-				0D60515A2721ED380008F4AA /* MainView.swift */,
-				0D60515C2721EDAD0008F4AA /* LikedView.swift */,
-				0D60515E2721EDB70008F4AA /* SavedView.swift */,
-				0D6051602721EE510008F4AA /* SearchView.swift */,
 				0DC186A827234682002509AC /* Saver.swift */,
 			);
 			path = "Go(o)dMemes";
@@ -298,6 +309,7 @@
 				0D60515D2721EDAD0008F4AA /* LikedView.swift in Sources */,
 				0D610A8126F274F600EFBDB8 /* MemeDEC.swift in Sources */,
 				0D60515F2721EDB70008F4AA /* SavedView.swift in Sources */,
+				0D0CBCA02730877E00934917 /* VideoView.swift in Sources */,
 				0D610A8326F277BF00EFBDB8 /* MemeAPI.swift in Sources */,
 				0D610A5726F271DA00EFBDB8 /* ContentView.swift in Sources */,
 				0D610A5526F271DA00EFBDB8 /* Go_o_dMemesApp.swift in Sources */,

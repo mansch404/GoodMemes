@@ -11,7 +11,9 @@ struct SearchView: View {
     @State private var searchText: String = ""
     var body: some View {
         NavigationView {
-            VStack {MemeView(meme: Saver.getMemes(), showsMenu: true)} .padding(.top)
+            VStack {
+                
+            } .padding(.top)
             
                 .navigationTitle("Search for Memes")
         }

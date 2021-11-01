@@ -24,6 +24,13 @@ struct ContentView: View {
                         Text("Search")
                     }
                 }
+            VideoView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "video")
+                        Text("Reels")
+                    }
+                }
             LikedView()
                 .tabItem {
                     VStack {

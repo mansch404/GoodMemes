@@ -14,7 +14,6 @@ struct MainView: View {
                 MemeTabView(showsMenuTab: true)
             }
             .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.75 , alignment: .top)
-            //                .background(Color(uiColor: UIColor.systemGray6))
             .ignoresSafeArea()
             .navigationTitle("Go(o)d Memes")
         }
