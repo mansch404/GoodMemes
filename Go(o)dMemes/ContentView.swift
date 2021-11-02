@@ -28,7 +28,7 @@ struct ContentView: View {
                 .tabItem {
                     VStack {
                         Image(systemName: "video")
-                        Text("Reels")
+                        Text("Tube")
                     }
                 }
             LikedView()
