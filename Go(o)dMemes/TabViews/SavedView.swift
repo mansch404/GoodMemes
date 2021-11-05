@@ -8,10 +8,28 @@
 import SwiftUI
 
 struct SavedView: View {
+    
+    @State var CurrentState: String = "Saved"
+    let States: [String] = [
+        "Saved", "Liked"
+    ]
+    
     var body: some View {
         NavigationView {
-            VStack {}
+            VStack{
+            Picker(selection: $CurrentState, content: {
+                ForEach(States.indices) { indice in
+                    Text(States[indice])
+                        .tag(States[indice])
+                }
+            }, label: {
+                
+            })
+                    .padding(.horizontal, 70)
+                .pickerStyle(SegmentedPickerStyle())
             .navigationTitle("Saved Memes")
+            Spacer()
+            }
         }
     }
 }
