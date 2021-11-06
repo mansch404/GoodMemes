@@ -25,7 +25,7 @@ struct SavedView: View {
             }, label: {
                 
             })
-                    .padding(.horizontal, 70)
+                    .padding(.horizontal, 140)
                 .pickerStyle(SegmentedPickerStyle())
             .navigationTitle("Saved Memes")
             Spacer()
