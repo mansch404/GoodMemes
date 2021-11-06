@@ -31,13 +31,6 @@ struct ContentView: View {
                         Text("Tube")
                     }
                 }
-//            LikedView()
-//                .tabItem {
-//                    VStack {
-//                        Image(systemName: "heart")
-//                        Text("Liked")
-//                    }
-//                }
             SavedView()
                 .tabItem {
                     VStack {

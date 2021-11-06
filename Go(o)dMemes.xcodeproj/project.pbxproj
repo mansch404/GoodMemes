@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0D0CBCA02730877E00934917 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0CBC9F2730877E00934917 /* VideoView.swift */; };
 		0D60515B2721ED380008F4AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60515A2721ED380008F4AA /* MainView.swift */; };
-		0D60515D2721EDAD0008F4AA /* LikedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60515C2721EDAD0008F4AA /* LikedView.swift */; };
 		0D60515F2721EDB70008F4AA /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60515E2721EDB70008F4AA /* SavedView.swift */; };
 		0D6051612721EE510008F4AA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6051602721EE510008F4AA /* SearchView.swift */; };
 		0D610A5526F271DA00EFBDB8 /* Go_o_dMemesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D610A5426F271DA00EFBDB8 /* Go_o_dMemesApp.swift */; };
@@ -48,7 +47,6 @@
 /* Begin PBXFileReference section */
 		0D0CBC9F2730877E00934917 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		0D60515A2721ED380008F4AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		0D60515C2721EDAD0008F4AA /* LikedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedView.swift; sourceTree = "<group>"; };
 		0D60515E2721EDB70008F4AA /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
 		0D6051602721EE510008F4AA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		0D610A5126F271DA00EFBDB8 /* Go(o)dMemes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go(o)dMemes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				0D60515A2721ED380008F4AA /* MainView.swift */,
-				0D60515C2721EDAD0008F4AA /* LikedView.swift */,
 				0D60515E2721EDB70008F4AA /* SavedView.swift */,
 				0D6051602721EE510008F4AA /* SearchView.swift */,
 				0D0CBC9F2730877E00934917 /* VideoView.swift */,
@@ -306,7 +303,6 @@
 				0D610A8726F2792D00EFBDB8 /* MemeViewModel.swift in Sources */,
 				0DAC82AB26F28A1C00FFEF01 /* MemeCL.swift in Sources */,
 				0D6051612721EE510008F4AA /* SearchView.swift in Sources */,
-				0D60515D2721EDAD0008F4AA /* LikedView.swift in Sources */,
 				0D610A8126F274F600EFBDB8 /* MemeDEC.swift in Sources */,
 				0D60515F2721EDB70008F4AA /* SavedView.swift in Sources */,
 				0D0CBCA02730877E00934917 /* VideoView.swift in Sources */,
