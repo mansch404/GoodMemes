@@ -10,8 +10,7 @@ import SwiftUI
 struct VideoView: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
-            LinearGradient(colors: [Color.green, Color.white, Color.white], startPoint: .top, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
+            // TODO: Set Video here
             VStack (alignment: .trailing) {
                 Text("MemeTube")
                     .bold()
@@ -32,6 +31,7 @@ struct VideoView: View {
                 .padding(.horizontal)
                 .padding(.bottom, 30)
             }
+            .frame(width: UIScreen.main.bounds.width, alignment: .trailing)
         }
     }
 }
