@@ -12,7 +12,7 @@ struct VideoView: View {
         ZStack(alignment: .topTrailing) {
             // TODO: Set Video here
             VStack (alignment: .trailing) {
-                Text("MemeTube")
+                Text("MemeTok")
                     .bold()
                     .font(.title2)
                     .padding(.horizontal)
