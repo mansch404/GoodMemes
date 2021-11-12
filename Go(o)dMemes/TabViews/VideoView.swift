@@ -19,14 +19,28 @@ struct VideoView: View {
                     .shadow(color: Color.white, radius: 15)
                 Spacer()
                 VStack {
-                    Image(systemName: "heart")
-                        .font(.title)
-                        .padding(.bottom)
-                    Image(systemName: "bookmark")
-                        .font(.title)
-                        .padding(.bottom)
-                    Image(systemName: "square.and.arrow.up")
-                        .font(.title)
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "heart")
+                            .font(.title)
+                            .padding(.bottom)
+                    }
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "bookmark")
+                            .font(.title)
+                            .padding(.bottom)
+
+                    }
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "square.and.arrow.up")
+                            .font(.title)
+                    }
+
                 }
                 .padding(.horizontal)
                 .padding(.bottom, 30)
