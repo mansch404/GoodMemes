@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct VideoView: View {
+    
+    @State var liked: Bool = false
+    @State var saved: Bool = false
+    
     var body: some View {
         ZStack(alignment: .topTrailing) {
             // TODO: Set Video here
@@ -20,16 +24,16 @@ struct VideoView: View {
                 Spacer()
                 VStack {
                     Button {
-                        
+                        liked.toggle()
                     } label: {
-                        Image(systemName: "heart")
+                        Image(systemName: liked ? "heart.fill" : "heart")
                             .font(.title)
                             .padding(.bottom)
                     }
                     Button {
-                        
+                        saved.toggle()
                     } label: {
-                        Image(systemName: "bookmark")
+                        Image(systemName: saved ? "bookmark.fill" : "bookmark")
                             .font(.title)
                             .padding(.bottom)
 
