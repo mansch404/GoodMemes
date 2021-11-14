@@ -38,7 +38,6 @@ struct MemeTabView: View {
                 .frame(height: 300)
         case .failure(let error):
             Text(error.localizedDescription)
-            //            RetryView(text: error.localizedDescription, retryAction: refreshTask)
         default: EmptyView()
         }
     }
