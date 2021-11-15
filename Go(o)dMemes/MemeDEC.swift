@@ -19,6 +19,8 @@ struct Meme : Decodable {
     let author: String
     let ups: Int
     let preview: [String]
+    let liked: Bool = false
+    let saved: Bool = false
     
     private enum CodingKeys: String, CodingKey { case postLink, subreddit, title, url, nsfw, spoiler, author, ups, preview }
     

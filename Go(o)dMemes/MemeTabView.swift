@@ -25,8 +25,6 @@ struct MemeTabView: View {
                         await articleNewsVM.loadArticles()
                     })
                 }
-        
-        
     }
     
     @ViewBuilder
