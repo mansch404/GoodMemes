@@ -43,13 +43,12 @@ struct MemeView: View {
         if showsMenu {
         HStack {
             Button {
-//                memeC.liked.toggle()
-                Saver.setMeme(memes: meme)
+                meme.liked.toggle()
             } label: {
                 HStack {
                     Spacer()
                     Image(systemName: "heart")
-//                        .symbolVariant(memeC.liked ? .fill : .none)
+                        .symbolVariant(meme.liked ? .fill : .none)
                     
                     Spacer()
                 }
@@ -58,12 +57,13 @@ struct MemeView: View {
                 .cornerRadius(20)
             }
             Button {
-//                memeC.bookmarked.toggle()
+                meme.saved.toggle()
+                print(meme.saved)
             } label: {
                 HStack {
                     Spacer()
                     Image(systemName: "bookmark")
-//                        .symbolVariant(memeC.bookmarked ? .fill : .none)
+                        .symbolVariant(meme.saved ? .fill : .none)
                     Spacer()
                 }
                 .padding(8)
