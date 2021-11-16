@@ -17,18 +17,25 @@ struct SavedView: View {
     var body: some View {
         NavigationView {
             VStack{
-            Picker(selection: $CurrentState, content: {
-                ForEach(States.indices) { indice in
-                    Text(States[indice])
-                        .tag(States[indice])
-                }
-            }, label: {
-                
-            })
+                Picker(selection: $CurrentState, content: {
+                    ForEach(States.indices) { indice in
+                        Text(States[indice])
+                            .tag(States[indice])
+                    }
+                }, label: {
+                    
+                })
                     .padding(.horizontal, 140)
-                .pickerStyle(SegmentedPickerStyle())
-            .navigationTitle("Saved Memes")
-            Spacer()
+                    .pickerStyle(SegmentedPickerStyle())
+                    .navigationTitle("Saved Memes")
+                
+                switch(CurrentState) {
+                case "Liked": EmptyView()
+                case "Saved": EmptyView()
+                default: EmptyView()
+                }
+                
+                Spacer()
             }
         }
     }
