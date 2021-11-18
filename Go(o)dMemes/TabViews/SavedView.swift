@@ -23,7 +23,7 @@ struct SavedView: View {
                             .tag(States[indice])
                     }
                 }, label: {
-                    
+                    // no label
                 })
                     .padding(.horizontal, 140)
                     .pickerStyle(SegmentedPickerStyle())
