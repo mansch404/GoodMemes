@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D0CBCA02730877E00934917 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0CBC9F2730877E00934917 /* VideoView.swift */; };
+		0D2C71E52746DCBF00FC6A83 /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C71E42746DCBF00FC6A83 /* BookmarkView.swift */; };
+		0D2C71E72746DCC900FC6A83 /* LikedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C71E62746DCC900FC6A83 /* LikedView.swift */; };
 		0D60515B2721ED380008F4AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60515A2721ED380008F4AA /* MainView.swift */; };
 		0D60515F2721EDB70008F4AA /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60515E2721EDB70008F4AA /* SavedView.swift */; };
 		0D6051612721EE510008F4AA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6051602721EE510008F4AA /* SearchView.swift */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		0D0CBC9F2730877E00934917 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		0D2C71E42746DCBF00FC6A83 /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		0D2C71E62746DCC900FC6A83 /* LikedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedView.swift; sourceTree = "<group>"; };
 		0D60515A2721ED380008F4AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0D60515E2721EDB70008F4AA /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
 		0D6051602721EE510008F4AA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 			path = TabViews;
 			sourceTree = "<group>";
 		};
+		0D2C71E12746DC9E00FC6A83 /* SavedView */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C71E42746DCBF00FC6A83 /* BookmarkView.swift */,
+				0D2C71E62746DCC900FC6A83 /* LikedView.swift */,
+			);
+			path = SavedView;
+			sourceTree = "<group>";
+		};
 		0D610A4826F271DA00EFBDB8 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +140,7 @@
 		0D610A5326F271DA00EFBDB8 /* Go(o)dMemes */ = {
 			isa = PBXGroup;
 			children = (
+				0D2C71E12746DC9E00FC6A83 /* SavedView */,
 				0D0CBC9E273043CB00934917 /* TabViews */,
 				0D610A5426F271DA00EFBDB8 /* Go_o_dMemesApp.swift */,
 				0D610A5626F271DA00EFBDB8 /* ContentView.swift */,
@@ -306,6 +320,8 @@
 				0D610A8126F274F600EFBDB8 /* MemeDEC.swift in Sources */,
 				0D60515F2721EDB70008F4AA /* SavedView.swift in Sources */,
 				0D0CBCA02730877E00934917 /* VideoView.swift in Sources */,
+				0D2C71E52746DCBF00FC6A83 /* BookmarkView.swift in Sources */,
+				0D2C71E72746DCC900FC6A83 /* LikedView.swift in Sources */,
 				0D610A8326F277BF00EFBDB8 /* MemeAPI.swift in Sources */,
 				0D610A5726F271DA00EFBDB8 /* ContentView.swift in Sources */,
 				0D610A5526F271DA00EFBDB8 /* Go_o_dMemesApp.swift in Sources */,

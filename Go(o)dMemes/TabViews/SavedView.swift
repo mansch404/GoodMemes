@@ -30,8 +30,8 @@ struct SavedView: View {
                     .navigationTitle("Saved Memes")
                 
                 switch(CurrentState) {
-                case "Liked": EmptyView()
-                case "Saved": EmptyView()
+                case "Liked": LikedView()
+                case "Saved": BookmarkView()
                 default: EmptyView()
                 }
                 
