@@ -100,6 +100,7 @@
 		0D0CBC9E273043CB00934917 /* TabViews */ = {
 			isa = PBXGroup;
 			children = (
+				0D2C71E12746DC9E00FC6A83 /* SavedView */,
 				0D60515A2721ED380008F4AA /* MainView.swift */,
 				0D60515E2721EDB70008F4AA /* SavedView.swift */,
 				0D6051602721EE510008F4AA /* SearchView.swift */,
@@ -140,7 +141,6 @@
 		0D610A5326F271DA00EFBDB8 /* Go(o)dMemes */ = {
 			isa = PBXGroup;
 			children = (
-				0D2C71E12746DC9E00FC6A83 /* SavedView */,
 				0D0CBC9E273043CB00934917 /* TabViews */,
 				0D610A5426F271DA00EFBDB8 /* Go_o_dMemesApp.swift */,
 				0D610A5626F271DA00EFBDB8 /* ContentView.swift */,

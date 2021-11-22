@@ -27,6 +27,7 @@ struct VideoView: View {
                         liked.toggle()
                     } label: {
                         Image(systemName: liked ? "heart.fill" : "heart")
+                            .foregroundColor(.black)
                             .font(.title)
                             .padding(.bottom)
                     }
@@ -34,6 +35,7 @@ struct VideoView: View {
                         saved.toggle()
                     } label: {
                         Image(systemName: saved ? "bookmark.fill" : "bookmark")
+                            .foregroundColor(.black)
                             .font(.title)
                             .padding(.bottom)
 
@@ -42,6 +44,7 @@ struct VideoView: View {
                         
                     } label: {
                         Image(systemName: "square.and.arrow.up")
+                            .foregroundColor(.black)
                             .font(.title)
                     }
 
